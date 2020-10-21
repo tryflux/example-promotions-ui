@@ -1,0 +1,150 @@
+{
+  "total": 50,
+  "items": [
+    {
+      "hostingOrganization": [
+        {
+          "name": "Flux",
+          "merchantId": "81c1d792-fac4-4299-aa5c-497c1c170bb6",
+          "latitude": 51.4995,
+          "longitude": -0.1248,
+          "address": {
+            "streetAddress": "2 Leman St",
+            "locality": "London",
+            "region": "County of London",
+            "postalCode": "E1 8FA",
+            "country": "England",
+            "sovereign": "United Kingdom"
+          },
+          "email": "email@example.com",
+          "telephone": "01632 555 000",
+          "branding": {
+            "primaryColor": "string",
+            "accentColors": ["rgb(248, 227, 222, 1)", "#f8e3de"],
+            "logo": {
+              "alt": "Flux ®",
+              "srcset": "https://app.tryflux.com/android-chrome-192x192.png 192w, https://app.tryflux.com/android-chrome-512x512.png 512w"
+            }
+          }
+        }
+      ],
+      "promotionState": "PENDING_ACTIVATION",
+      "name": "Flux x BrewCo Brewtastic Stamp Card",
+      "description": "Get 1 free beer when you collect 10 stamps",
+      "branding": {
+        "primaryColor": "#f8e3de",
+        "accentColors": ["#004d42"],
+        "logo": {
+          "alt": "Flux ®",
+          "srcset": "https://app.tryflux.com/android-chrome-192x192.png 192w, https://app.tryflux.com/android-chrome-512x512.png 512w"
+        },
+        "symbol": {
+          "alt": "☕️",
+          "srcset": "https://example.com/stamp-icon-192.png 192w"
+        }
+      },
+      "terms": {
+        "description": [
+          "Only at participating stores",
+          "Not redeemable at kiosks",
+          "Not redeemable at airports"
+        ],
+        "url": "https://example.com/free-beer/extended-terms"
+      },
+      "type": "flux_cashback",
+      "redemptions": [
+        {
+          "timestamp": "2019-07-22T10:11:12.123Z",
+          "monetaryEquivelant": {
+            "amount": 1099,
+            "currency": "GBP"
+          },
+          "description": "stamp card redeemed for free coffee"
+        }
+      ],
+      "value": {
+        "monetaryEquivelant": {
+          "amount": 1099,
+          "currency": "GBP"
+        },
+        "coefficient": 0,
+        "current": {
+          "decimal": 7,
+          "description": "stamps",
+          "type": "discrete"
+        },
+        "target": {
+          "decimal": 10,
+          "description": "stamps",
+          "type": "discrete"
+        }
+      },
+      "validityPeriod": {
+        "startDateTime": "2019-07-22T10:11:12.123Z",
+        "endDateTime": "2019-07-22T10:11:12.123Z"
+      },
+      "tags": ["beer", "weekend", "friday", "evening", "night out"],
+      "id": "81c1d792-fac4-4299-aa5c-497c1c170bb6"
+    },
+    {
+      "id": "32b33155-83b6-4074-9933-aa14ccd3d2db",
+      "promotionState": "READY",
+      "name": "Ambrosia",
+      "description": "Collect loyalty points to get special deals",
+      "type": "points",
+      "hostingOrganization": [
+        { "name": "J Songirds Supermarket"},
+        { "description": "Participating Retailers" }
+      ],
+      "branding": {
+        "primaryColor": "#38005b",
+        "accentColors": [ "#8520f7" ],
+        "logo": { "srcset": "./ambrosia.svg 192w" }
+      },
+      "value": {
+        "monetaryEquivelant": { "amount": 1099, "currency": "GBP" },
+        "current": {
+          "decimal": 700, "description": "points", "type": "continuous"
+        }
+      },
+      "code": {
+        "code": "0000069196423",
+        "type": "CODE_128",
+        "title": "Don't forget to scan me at checkout"
+      },
+      "validityPeriod": { "startDateTime": "2019-07-22T10:11:12.123Z" }
+    },
+    {
+      "id": "c6688a5c-21ad-46ae-a054-4bba7117864a",
+      "promotionState": "READY",
+      "name": "Co$tCup Coffe Card",
+      "description": "Collect Co$tCup stamps to get a free coffee",
+      "type": "stamp_card",
+      "hostingOrganization": [
+        { "name": "Co$tCup Coffee" }
+      ],
+      "branding": {
+        "primaryColor": "rgb(145, 2, 46)",
+        "accentColors": [ "rgb(255, 221, 221)" ],
+
+        "logo": { "srcset": "./costcup.svg" },
+        "symbol": { "srcset": "./costcup-stamp.svg" }
+      },
+      "value": {
+        "monetaryEquivelant": { "amount": 499, "currency": "GBP" },
+        "current": {
+          "decimal": 4, "description": "stamps", "type": "discrete"
+        },
+        "target": {
+          "decimal": 5, "description": "stamps", "type": "discrete"
+        }
+      },
+      "code": {
+        "code": "VGhpcyBpcyBhIHFyIGNvZGUsIHRydXN0IG1lIHBsZWFzZQo=",
+        "type": "CODE_QR",
+        "title": "Don't forget to scan me at checkout"
+      },
+      "validityPeriod": { "startDateTime": "2019-07-22T10:11:12.123Z", "endDateTime": "2019-12-22T10:11:12.123Z" }
+    }
+  ]
+}
