@@ -1,21 +1,24 @@
-import React from "react";
-import PromotionCard from "./PromotionCard";
 import "./styles.css";
 
-const exampleResponse = require("./data.json");
+import PromotionCard from "./PromotionCard";
+import React from "react";
+import { usePromotions } from "./usePromotions";
+
 export default function App() {
+  const promotions = usePromotions("https://api.test.tryflux.com/promotions")
   return (
+    
     <div className="App">
       <h1>Your Promotions</h1>
       <ul className="promotionsList">
-        {exampleResponse.items.map((promotion) => (
+        {promotions?.items?.map((promotion) => (
           <li key={promotion.id}>
             <PromotionCard promotion={promotion} />
           </li>
         ))}
       </ul>
       <br />
-      Showing {exampleResponse.items.length} of {exampleResponse.total} results
+      Showing {promotions?.items?.length} of {promotions?.total} results
     </div>
   );
 }
