@@ -11,7 +11,7 @@ export const QrCode = ({ code, color }) => {
 
   return (
     <div>
-      <img src={image} />
+      <img alt={code.title} src={image} />
     </div>
   );
 };

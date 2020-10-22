@@ -9,7 +9,7 @@ export const PromoProgress = ({ promotion }) => {
 
         if (typeof(promotion?.branding?.symbol?.srcset) === "string") {
             // There's an icon to use as a stamp icon.
-            return <StampsBar curr={curr} targ={targ} stampIcon={promotion.branding.symbol.srcset} />
+            return <StampsBar curr={curr} targ={targ} stampIcon={promotion.branding.symbol} />
         }
         return <SimpleProgressBar
             color={promotion?.branding?.accentColors[0]}
